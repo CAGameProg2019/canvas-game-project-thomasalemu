@@ -7,10 +7,10 @@ let x=canvas.width/2-120;
 let y= canvas.height/2;
 
 var keyPressed={
-  w:false,
-  a:false,
-  s:false,
-  d:false
+    w:false,
+    a:false,
+    s:false,
+    d:false
 };
 
 
@@ -36,7 +36,7 @@ function init() {
 }
 
 function update() {
-c.clearRect(0,0,canvas.width,canvas.height);
+    c.clearRect(0,0,canvas.width,canvas.height);
 
 
     if(keyPressed.w === true){
@@ -77,6 +77,7 @@ window.addEventListener('load', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     init();
+    timer();
 });
 
 window.addEventListener('keydown',function(event){
